@@ -12,7 +12,7 @@ public class AuthFormPage {
     private final String INPUT_PASSWORD = "//*[@id=\"auth-container\"]/div/div[2]/div/form/div[2]/div/div/div/div/input";
     private final String BUTTON_SUBMIT = "//*[@id=\"auth-container\"]/div/div[2]/div/form/div[3]/button";
     private final String LINK_REGISTER = "//*[@id=\"auth-container\"]/div/div[2]/div/form/div[4]/div[1]/a";
-    private final String LNK_FORGOT_PASSWORD = "//*[@id=\"auth-container\"]/div/div[2]/div/form/div[4]/div[2]/a";
+    private final String LINK_FORGOT_PASSWORD = "//*[@id=\"auth-container\"]/div/div[2]/div/form/div[4]/div[2]/a";
     private final String BUTTON_CLOSE = "//*[@id=\"auth-container\"]/div/div[1]/div[2]";
 
     public AuthFormPage(ChromeDriver driver) {
@@ -31,7 +31,7 @@ public class AuthFormPage {
         driver.findElement(By.xpath(INPUT_PASSWORD)).sendKeys(password);
     }
 
-    public void clickSubmitButton() {
+    public void clickButtonSubmit() {
         driver.findElement(By.xpath(BUTTON_SUBMIT)).click();
     }
 
@@ -40,7 +40,7 @@ public class AuthFormPage {
     }
 
     public void clickLinkForgotPassword() {
-        driver.findElement(By.xpath(LNK_FORGOT_PASSWORD)).click();
+        driver.findElement(By.xpath(LINK_FORGOT_PASSWORD)).click();
     }
 
     public void clickButtonClose() {

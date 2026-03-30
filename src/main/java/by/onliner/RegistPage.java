@@ -20,8 +20,6 @@ public class RegistPage {
 
     private final String BUTTON_SUBMIT = "//*[@id=\"container\"]/div/div/div/form/div[2]/div/div[9]/button";
     private final String LINK_LOGIN = "//*[@id=\"container\"]/div/div/div/form/div[2]/div/div[10]/a";
-    //private final String LNK_FORGOT_PASSWORD = "//*[@id=\"auth-container\"]/div/div[2]/div/form/div[4]/div[2]/a";
-    //private final String BUTTON_CLOSE = "//*[@id=\"auth-container\"]/div/div[1]/div[2]";
 
     public String getTitleText(){
         return driver.findElement(By.xpath(TITLE)).getText();
@@ -38,7 +36,7 @@ public class RegistPage {
         driver.findElement(By.xpath(INPUT_REPEAD_PASSWORD)).sendKeys(password);
     }
 
-    public void clickSubmitButton (){
+    public void clickButtonSubmit (){
         driver.findElement(By.xpath(BUTTON_SUBMIT)).click();
     }
 

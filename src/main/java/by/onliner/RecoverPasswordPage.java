@@ -23,7 +23,7 @@ public class RecoverPasswordPage {
     public void setInputEmail(String email){
         driver.findElement(By.xpath(INPUT_EMAIL)).sendKeys(email);
     }
-    public void clickSubmitButton (){
+    public void clickButtonSubmit (){
         driver.findElement(By.xpath(BUTTON_SUBMIT)).click();
     }
 
